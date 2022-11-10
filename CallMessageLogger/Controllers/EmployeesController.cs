@@ -66,7 +66,7 @@ namespace CallMessageLogger.Controllers
 
                 };
 
-                return await Task.Run(() => View(viewModel));
+                return await Task.Run(() => View("View",viewModel));
             }
 
             return RedirectToAction("Index");
